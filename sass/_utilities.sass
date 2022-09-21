@@ -3,7 +3,7 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-familily: 'Lato'
+    font-family: 'Lato'
   a
     text-decoration: none
    
@@ -17,9 +17,26 @@
   &:hover 
     color: $primary-color
 
-//PLACEHOLDER
+//PLACEHOLDER SELECTORS
 %title-text-shadow
     text-shadow: 3px 2px $black
+
+%section-title
+  font-size: 3rem
+  margin-top: 2rem
+  text-align: center
+
+%center-bg
+  background-size: cover
+  background-position: center
+
+%card-hover
+  .job-card-title, .job-card-cover
+    opacity: 0
+
+  &:hover
+    .job-card-title, .job-card-cover, .job-card-description
+      opacity: 1
 
 //BTNS
 .btn
@@ -44,5 +61,5 @@
     &-rounded
         margin-top: 1rem
         border-radius: 2rem
-        paddind: 1rem 1.5rem
+        padding: 1rem 1.5rem
    
